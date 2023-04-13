@@ -15,22 +15,31 @@ fastflax.css is a wrapper over basic css properties. It includes: flex propertie
 |:----------------|:---------:|:----------------|:----------------:|
 | c_column | - | `flex-direction: column;` | - |
 | c_row | - | `flex-direction: row;` | - |
-| align_start | - | `align-items: flex-start;` | - |
-| align_center | - | `align-items: center;` | - |
-| align_end | - | `align-items: flex-end;` | - |
-| justify_end | - | `justify-content: flex-end;` | - |
-| justify_start | - | `justify-content: flex-start;` | - |
-| justify_center | - | `align-items: center;` | - |
-| justify_space_between | - | `justify-content: space-between;` | - |
-| justify_space_around | - | `justify-content: space-around;` | - |
+| align_{value} | start, center, end | `align-items` | - |
+| justify_{value} | end,start, center, space_between, space_arount | `justify-content` | - |
 | clickable | - | - | When hovering over an element, creates transparency |
-| line_scroll_disable_all | - | `overflow: hidden;` | - |
-| line_scroll_disable_y | - | `overflow-y: hidden;` | - |
-| line_scroll_disable_x | - | `overflow-x: hidden;` | - |
+| line_scroll_disable_all | all, y, x | `overflow` | Disable scrolling on certain sides |
 | width_{value} | 5, 10, 15, 20, 25. 33, 50, 66, 75, 85, 100, | `width: 50%;` | Example: `<div class="width_33"></div>` |
 | full_height | - | `height: 100%;` | - |
-
-
+| margin_clear | - | `margin: 0` | - |
+| margin_v10_h5 | - | `margin: 10px 5px 10px 5px` | - |
+| margin_v5_h10 | - | `margin: 5px 10px 5px 10px` | - |
+| margin_h5 | - | `margin: 0px 5px 0px 5px` | - |
+| margin_h{value} | 5, 10, 15, 20 | `margin: 0px 10px 0px 10px` | - |
+| margin_v{value} |  5, 10, 15, 20 | `margin: 5px 0px 5px 0px;` | - |
+| margin_lf_{value} | 5, 10, 15, 20 | `margin-left: 5px;` | - |
+| margin_rh_{value} | 5, 10, 15, 20 | `margin-right: 5px;` | - |
+| margin_top_{value} | 5, 10, 15, 20 | `margin-top: 5px;` | - |
+| margin_bottom | 5. 10, 15, 20 | `` | - |
+| padding_clear | - | `padding: 0` | - |
+| padding_v10_h5 | - | `padding: 10px 5px 10px 5px;` | - |
+| padding_v5_h10 | - | `padding: 5px 10px 5px 10px;` | - |
+| padding_h{value} | 5, 10, 15, 20 | `padding: 0px 5px 0px 5px;` | - |
+| padding_v{5} | 5, 10, 15, 20 | `padding: 5px 0px 5px 0px;` | - |
+| padding_lf_{value} | 5, 10, 15, 20 | `padding-left: 5px;` | - |
+| padding_rh_{value} | 5, 10, 15, 20 | `padding-right: 5px;` | - |
+| padding_top_{value} | 5, 10, 15, 20 | `padding-top: 5px;` | - |
+| padding_bottom_{value} | 5, 10, 15, 20 | `padding-bottom: 5px;` | - |
 
 ### Text and fonts
 | NAME | VALUES | CORRESPONDS | DECRIPTION |
@@ -42,7 +51,6 @@ fastflax.css is a wrapper over basic css properties. It includes: flex propertie
 | font_w_b | - | `font-weight: bold;` | - |
 | font_w_{value} | from 100 to max 900 | `font-weight: 500;` | Example: `<div class="font_w_500"></div>` |
 | font_a_u_rem | - | `text-decoration: none;` | Removes a property from an element: "text-decoration" |
-
 |  | - | `` | - |
 |  | - | `` | - |
 |  | - | `` | - |
